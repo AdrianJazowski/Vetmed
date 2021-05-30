@@ -5,6 +5,8 @@ import styled, { css } from "styled-components";
 
 export const NavbarWrapper = styled.nav`
   position: fixed;
+  left: 0;
+  top: 0;
   width: 5rem;
   height: 100vh;
   background-color: #23232e;
