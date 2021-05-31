@@ -13,33 +13,42 @@ const cardEntrance = keyframes`
       transform: scale(1);
       filter: hue-rotate(0deg);
     }
-  }`;
+  `;
 
 export const Galery = styled.section`
-  width: 100%;
-  height: 100%;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
+  height: 80vh;
+  align-self: center;
+  transform: translate(0, -15%);
+  @media (max-width: 360px) {
+    transform: translate(0, 0);
+  }
 `;
 export const WrapperForPhoto = styled.div`
-  height: 60%;
-  width: 70%;
-
+  height: 80%;
   display: grid;
   gap: 1rem;
+  justify-content: center;
 
   /* Explicit grid */
   grid-template-areas:
-    "a  b  c  d"
-    "l  🌟 🌟 e"
-    "k  🌟 🌟 f"
-    "j  i  h  g";
+    "a  b  c"
+    "h  🌟 d"
+    "g  f  e";
 
-  grid-template-rows: repeat(4, 25%);
-  grid-template-columns: 240px auto auto 240px;
+  grid-template-rows: repeat(3, 30%);
+  grid-template-columns: 240px 240px 240px;
 
   --stagger-delay: 100ms;
+
+  @media (max-width: 360px) {
+    grid-template-areas:
+      "a"
+      "b";
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: 240px;
+    gap: 1fr;
+  }
 `;
 export const Photo = styled.img`
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
@@ -54,6 +63,12 @@ export const Photo = styled.img`
   background-repeat: no-repeat;
   animation: ${cardEntrance} 700ms ease-out;
   animation-fill-mode: backwards;
+
+  @media (max-width: 360px) {
+    :nth-child(n + 2):nth-child(n + 3) {
+      display: none;
+    }
+  }
 
   :nth-child(1) {
     grid-area: a;
