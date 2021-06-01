@@ -11,6 +11,7 @@ export const NavbarWrapper = styled.nav`
   height: 100vh;
   background-color: #23232e;
   transition: all 0.3s ease;
+  z-index: 1000;
   span {
     display: inline;
     position: absolute;
