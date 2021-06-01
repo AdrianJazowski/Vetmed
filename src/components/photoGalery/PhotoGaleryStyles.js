@@ -20,7 +20,7 @@ export const Galery = styled.section`
   height: 80vh;
   align-self: center;
   transform: translate(0, -15%);
-  @media (max-width: 360px) {
+  @media (max-width: 767px) {
     transform: translate(0, 0);
   }
 `;
@@ -41,12 +41,21 @@ export const WrapperForPhoto = styled.div`
 
   --stagger-delay: 100ms;
 
-  @media (max-width: 360px) {
+  @media (max-width: 920px) {
+    grid-template-areas:
+      "a b"
+      "c d";
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: 280px 280px;
+    gap: 1fr;
+  }
+
+  @media (max-width: 767px) {
     grid-template-areas:
       "a"
       "b";
     grid-template-rows: repeat(2, 40%);
-    grid-template-columns: 240px;
+    grid-template-columns: 200px;
     gap: 1fr;
   }
 `;
@@ -64,8 +73,13 @@ export const Photo = styled.img`
   animation: ${cardEntrance} 700ms ease-out;
   animation-fill-mode: backwards;
 
-  @media (max-width: 360px) {
+  @media (max-width: 767px) {
     :nth-child(n + 2):nth-child(n + 3) {
+      display: none;
+    }
+  }
+  @media (max-width: 920px) {
+    :nth-child(n + 2):nth-child(n + 5) {
       display: none;
     }
   }
