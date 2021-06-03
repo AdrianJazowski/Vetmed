@@ -2,21 +2,29 @@
 
 import React from "react";
 import { Galery, Photo, WrapperForPhoto } from "./PhotoGaleryStyles";
-import CatOne from "../../assets/photos/cat.jpg";
+import SmileDog from "../../assets/photos/smileDog.jpg";
+import SmileCat from "../../assets/photos/smileCat.jpg";
+import SmileParrot from "../../assets/photos/parrot.jpg";
+import SmileTutrle from "../../assets/photos/turtle.jpg";
+import SmileLizard from "../../assets/photos/lizard.jpg";
+import NormalDog from "../../assets/photos/normalDog.jpg";
+import NormalCat from "../../assets/photos/normalCat.jpg";
+import Raccoon from "../../assets/photos/raccoon.jpg";
+import Hamster from "../../assets/photos/hamster.jpg";
 
 const PhotoGalery = () => {
   return (
     <Galery>
       <WrapperForPhoto>
-        <Photo src={CatOne} />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        <Photo src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
+        <Photo src={SmileDog} />
+        <Photo src={SmileCat} />
+        <Photo src={SmileParrot} />
+        <Photo src={SmileTutrle} />
+        <Photo src={SmileLizard} />
+        <Photo src={NormalDog} />
+        <Photo src={NormalCat} />
+        <Photo src={Raccoon} />
+        <Photo src={Hamster} />
       </WrapperForPhoto>
     </Galery>
   );
