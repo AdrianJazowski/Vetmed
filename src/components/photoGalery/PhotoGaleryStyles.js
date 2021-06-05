@@ -17,7 +17,7 @@ const cardEntrance = keyframes`
 
 export const Galery = styled.section`
   padding: 1rem;
-  height: 80vh;
+  /* height: 80vh; */
   align-self: center;
   transform: translate(0, -15%);
   @media (max-width: 767px) {
