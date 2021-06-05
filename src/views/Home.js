@@ -2,6 +2,7 @@
 
 import React from "react";
 import PhotoGalery from "../components/photoGalery/PhotoGalery";
+import AboutUs from "./aboutUs/AboutUs";
 import { AppHeader } from "./HomeStyles";
 
 const Home = () => {
@@ -15,8 +16,8 @@ const Home = () => {
           typu koty i psy poprzez egzotyczne gady i ptaki.
         </p>
       </AppHeader>
-
       <PhotoGalery />
+      <AboutUs />
     </>
   );
 };
