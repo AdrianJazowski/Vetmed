@@ -4,10 +4,11 @@ import styled from "styled-components";
 
 export const AboutUsWrapper = styled.section`
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  margin: 1rem;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  transform: translate(0, -100px);
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    transform: translate(-10px, -10px);
+  }
 `;
