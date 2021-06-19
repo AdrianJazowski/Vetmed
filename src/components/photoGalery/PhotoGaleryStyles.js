@@ -17,11 +17,13 @@ const cardEntrance = keyframes`
 
 export const Galery = styled.section`
   padding: 1rem;
-  /* height: 80vh; */
   align-self: center;
-  transform: translate(0, -15%);
-  @media (max-width: 767px) {
-    transform: translate(0, 0);
+  @media (min-width: 1024px) {
+    transform: translate(0, -40%);
+  }
+
+  @media (min-width: 768px) {
+    transform: translate(0, -25%);
   }
 `;
 export const WrapperForPhoto = styled.div`
@@ -56,6 +58,14 @@ export const WrapperForPhoto = styled.div`
       "b";
     grid-template-rows: repeat(2, 40%);
     grid-template-columns: 200px;
+    gap: 1fr;
+  }
+  @media (max-width: 280px) {
+    grid-template-areas:
+      "a"
+      "b";
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: 180px;
     gap: 1fr;
   }
 `;
