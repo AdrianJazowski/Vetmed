@@ -7,8 +7,10 @@ export const AboutUsWrapper = styled.section`
   width: 90%;
   margin: auto;
   flex-direction: column;
-
   @media (min-width: 768px) {
-    transform: translate(-10px, -10px);
+    margin-top: -10rem;
+  }
+  @media (min-width: 1024px) {
+    margin-top: -12rem;
   }
 `;
