@@ -20,6 +20,9 @@ export const NavbarWrapper = styled.nav`
   }
   :hover {
     width: 16rem;
+    @media (max-width: 360px) {
+      width: 13rem;
+    }
     span {
       display: inline;
       left: 70px;

@@ -5,7 +5,7 @@ import { AppWrapper } from "./AppStyles";
 import Navbar from "./components/navbar/Navbar";
 import GlobalStyles from "./globalStyles";
 import { routes } from "./routes";
-import Home from "./views/Home";
+import Home from "./views/home/Home";
 
 function App() {
   return (
